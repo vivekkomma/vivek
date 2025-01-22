@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmala Hospitals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <style>
+        /* .scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        } */
+    </style>
+
+    <style>
+        .Schedule-main2 {
+
+            visibility: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 1001517986 !important;
+            top: -100%;
+            transition: 0.5s;
+        }
+
+        .showScheduleForm {
+            top: 0%;
+            visibility: visible;
+
+        }
+
+        .Schedule-main2 input {
+            border: 2px solid #358e83;
+        }
+
+        #form-div {
+            width: 30%;
+            margin: 00px auto;
+            padding: 10px 30px;
+            background-color: white;
+
+
+        }
+
+        #form1 {
+            width: 100%;
+        }
+
+        .submit .btn {
+            background-color: white !important;
+
+        }
+
+        #button-blue:hover {
+            background-color: black;
+        }
+
+        #form-div {
+            position: relative;
+        }
+
+        #form-div .close-menu {
+            right: 20px;
+            top: 30px;
+            position: absolute;
+        }
+
+        #form-div .close-menu:hover {
+            color: white;
+        }
+
+        #form-div input {
+            background-color: white;
+            padding: 10px;
+            height: 45px;
+            outline: 1px solid #b5b5b5;
+
+        }
+
+        .tn-upper {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        #checkbox input {
+            height: 20px;
+            padding: 0px;
+            outline: 0px;
+            text-align: left;
+            width: 20px;
+
+        }
+
+        @media(max-width: 768px) {
+            #form-div {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="modalOverlay">
+        <div class="Schedule-main2  ">
+            <div id="form-div">
+                <i class="close-menu fa-solid fa-x text-sm " style="color: black;" onclick="showScheduleForm()"></i>
+                <form class="form" id="form1" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- <input type="hidden" name="access_key" value="29b7d8fb-7712-4fc7-a076-7ed1c9d66ca2"> -->
+                    
+                    <h3 style="text-align: center; color: black;"
+                        class="text-3xl font-bold dark:text-gray-900 text-center py-2">Book Appointment</h3>
+
+                    <p class="name">
+                        <input name="name" type="text"
+                            class="w-full px-4 py-3 rounded-md border-[#b2b2b2b2] border-2 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            placeholder="Name" id="name" />
+                    </p>
+                    <p class="text">
+                        <input name="text" type="text"
+                            class="w-full px-4 py-3 rounded-md border-[#b2b2b2b2] border-2 my-4 inline-block dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            id="number" placeholder="Phone Number" />
+                    </p>
+                    <p class="email">
+                        <input name="email" type="text"
+                            class="w-full px-4 py-3 rounded-md border-[#b2b2b2b2] border-2 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            id="email" placeholder="Email" />
+                    </p>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Rheumatic Profile (Minor)</label>
+                    </div>
+
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Rheumatic Profile (Major)</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Diabetic Health Check Up</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Infertility Profile (Male)</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Infertility Profile (Female)</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Antenatal Profile</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Regular Health Check Up</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Master Health Check Up</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df"> Cardiac Health Check Up</label>
+                    </div>
+                    <div class=" checkbox flex justify-start gap-8 items-center" id="checkbox">
+
+                        <input type="checkbox" id="df" name="df" id="" class="inline-block text-left "></input>
+                        <label for="df">PCOD Profile</label>
+                    </div>
+
+
+
+
+                    <div class="submit">
+                        <button type="submit"
+                            class="w-[100%] py-2 font-semibold rounded dark:bg-violet-600 dark:text-gray-50 ">
+                            <a href="">Send</a>
+                        </button>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- top header -->
+    <div class="top-header bg-[#358e83] py-4 hidden md:block">
+        <div class="custom-container">
+            <div class="flex justify-between items-center">
+                <div class="flex justify-between px-4  items-center gap-2">
+                    <div class=" w-[35px] h-[35px]   flex justify-center items-center">
+                        <img src="../img/top-icon1.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-[70%] text-left">
+                        <h5 class="font-[Poppins] text-[white]  font-semibold text-sm">Contatc Us</h5>
+                        <p class="font-[Poppins] text-[white] text-sm">+919000503000</p>
+                    </div>
+                </div>
+                <div class="flex justify-between px-4  items-center gap-2">
+                    <div class=" w-[35px] h-[35px]   flex justify-center items-center">
+                        <img src="../img/top-icon2.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-[70%] text-left">
+                        <h5 class="font-[Poppins] text-[white]  font-semibold text-sm">Email</h5>
+                        <p class="font-[Poppins] text-[white] text-sm">hello@nirmalahospital.co.in</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between px-4  items-center gap-2">
+                    <div class=" w-[35px] h-[35px]   flex justify-center items-center">
+                        <img src="../img/top-icon3.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-[70%] text-left">
+                        <h5 class="font-[Poppins] text-[white]  font-semibold text-sm">Consultation</h5>
+                        <p class="font-[Poppins] text-[white] text-sm">hello@nirmalahospital.co.in</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between px-4  items-center gap-2">
+                    <div class=" w-[35px] h-[35px]   flex justify-center items-center">
+                        <img src="../img/top-icon4.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-[70%] text-left">
+                        <h5 class="font-[Poppins] text-[white]  font-semibold text-sm">Supports</h5>
+                        <p class="font-[Poppins] text-[white] text-sm">24x7 Supports</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between px-4  items-center gap-2">
+                    <div class=" w-[35px] h-[35px]  flex justify-center items-center">
+                        <img src="../img/top-icon-5.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-[70%] text-left">
+                        <h5 class="font-[Poppins] text-[white]  font-semibold text-sm">My Reports</h5>
+                        <p class="font-[Poppins] text-[white] text-sm">Download</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="barside">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#aboutus">About</a></li>
+            <li class="dropdown"><a>Services</a>
+                <ul class="dropdown-content">
+                    <li class="dropdown-inner"><a>Obstetrics</a>
+
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="../high-risk-pregnancy/">High Risk Pregnancy</a></li>
+                            <li class=""><a href="../painless-delivery/">Painless Delivery</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown-inner"><a>Gynecology</a>
+
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="../laparoscopy/">Laparoscopy</a></li>
+                            <li class=""><a href="../hysteroscopy/">Hysteroscopy</a></li>
+                            <li class=""><a href="../infertility/">Infertility</a></li>
+                            <li class=""><a href="../cosmetic-gynecology/">Cosmetic Gynecology</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-inner"><a>Orthopaedics</a>
+
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="../trauma/">Trauma</a></li>
+                            <li class=""><a href="../arthroscopy/">Arthroscopy</a></li>
+                            <li class=""><a href="../knee-replacement/">Knee Replacement</a></li>
+                            <li class=""><a href="../hip-replacement/">Hip Replacement</a></li>
+                            <li class=""><a href="../spine-surgery/">Spine Surgery</a></li>
+                            <li class=""><a href="../endoscopic-spine-surgery/">Endoscopic Spine Surgery</a></li>
+                            <li class=""><a href="../pain-management/">Pain Management</a></li>
+                            <li class=""><a href="../regenerative-medicine/">Regenerative Medicine</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-inner"><a href="../anesthesia/">Anesthesia</a></li>
+                    <li class="dropdown-inner"><a href="../general-surgery/">General Surgery</a></li>
+                    <li class="dropdown-inner"><a href="../pediatrics/">Pediatrics</a></li>
+                    <li class="dropdown-inner"><a href="../general-medicine/">General Medicine</a></li>
+
+                    <li class="dropdown-inner"><a>Lab Services</a>
+
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="../hematology/">Hematology</a></li>
+                            <li class=""><a href="../pathology/">Pathology</a></li>
+                            <li class=""><a href="../biochemistry/">biochemistry</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-inner"><a>Diagnostic Services</a>
+
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="../x-ray/">X-ray</a></li>
+                            <li class=""><a href="../2d-echo/">2D Echo</a></li>
+                            <li class=""><a href="../ecg/">ECG</a></li>
+                            <li class=""><a href="../usg/">USG</a></li>
+
+
+                        </ul>
+                    </li>
+                    <!-- <li class=""><a href="">Physiotherapy</a></li> -->
+                    <li class="dropdown-inner"><a>Other Services</a>
+
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="">24/7 Emergency Care</a></li>
+                            <li class=""><a href="">ICU</a></li>
+
+                            <li class=""><a href="">Pharmacy</a></li>
+                            <li class=""><a href="">Ambulance</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <header data-aos="fade-up" data-aos-duration="1000">
+        <nav class="py-4  ">
+            <div class="logo">
+
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+
+    <div class="nav">
+
+                <div class="nav2">
+
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#aboutus">About</a></li>
+                        <li class="dropdown"><a>Services</a>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-inner"><a>Obstetrics</a>
+
+                                    <ul class="dropdown-inner-content">
+                                        <li class=""><a href="high-risk-pregnancy/">High Risk Pregnancy</a></li>
+                                        <li class=""><a href="painless-delivery/">Painless Delivery</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="dropdown-inner"><a>Gynecology</a>
+
+                                    <ul class="dropdown-inner-content">
+                                        <li class=""><a href="laparoscopy/">Laparoscopy</a></li>
+                                        <li class=""><a href="hysteroscopy/">Hysteroscopy</a></li>
+                                        <li class=""><a href="infertility/">Infertility</a></li>
+                                        <li class=""><a href="cosmetic-gynecology/">Cosmetic Gynecology</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-inner"><a>Orthopaedics</a>
+
+                                    <ul class="dropdown-inner-content">
+                                        <li class=""><a href="trauma/">Trauma</a></li>
+                                        <li class=""><a href="arthroscopy/">Arthroscopy</a></li>
+                                        <li class=""><a href="knee-replacement/">Knee Replacement</a></li>
+                                        <li class=""><a href="hip-replacement/">Hip Replacement</a></li>
+                                        <li class=""><a href="spine-surgery/">Spine Surgery</a></li>
+                                        <li class=""><a href="endoscopic-spine-surgery/">Endoscopic Spine Surgery</a>
+                                        </li>
+                                        <li class=""><a href="pain-management/">Pain Management</a></li>
+                                        <li class=""><a href="regenerative-medicine/">Regenerative Medicine</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-inner"><a href="anesthesia/">Anesthesia</a></li>
+                                <li class="dropdown-inner"><a href="general-surgery/">General Surgery</a></li>
+                                <li class="dropdown-inner"><a href="pediatrics/">Pediatrics</a></li>
+                                <li class="dropdown-inner"><a href="general-medicine/">General Medicine</a></li>
+
+                                <li class="dropdown-inner"><a>Lab Services</a>
+
+                                    <ul class="dropdown-inner-content">
+                                        <li class=""><a href="hematology/">Hematology</a></li>
+                                        <li class=""><a href="pathology/">Pathology</a></li>
+                                        <li class=""><a href="biochemistry/">biochemistry</a></li>
+
+
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-inner"><a>Diagnostic Services</a>
+
+                                    <ul class="dropdown-inner-content">
+                                        <li class=""><a href="x-ray/">X-ray</a></li>
+                                        <li class=""><a href="2d-echo/">2D Echo</a></li>
+                                        <li class=""><a href="ecg/">ECG</a></li>
+                                        <li class=""><a href="usg/">USG</a></li>
+
+
+                                    </ul>
+                                </li>
+                                <!-- <li class=""><a href="">Physiotherapy</a></li> -->
+
+                                                                       <!-- <li class="dropdown-inner"><a>Other Services</a>
+                        <ul class="dropdown-inner-content">
+                            <li class=""><a href="">24/7 Emergency Care</a></li>
+                            <li class=""><a href="">ICU</a></li>
+                            <li class=""><a href="">Pharmacy</a></li>
+                            <li class=""><a href="">Ambulance</a></li>
+                        </ul>
+                    </li> -->
+                            </ul>
+                        </li>
+                        <li><a href="../alldoctors/index.html">Our Doctors</a></li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- <div class="nav-button cloud-button">
+                <button>
+                    <a href="contact.html">Cloud</a>
+                </button>
+            </div> -->
+            <div class="nav-button">
+
+                <a target="_blank" href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <!-- Our Services -->
+    <section class="" data-aos="fade-up" data-aos-duration="1000">
+
+        <div class="world pb-20 relative overflow-hidden">
+            <div class="absolute md:bottom-80 bottom-10 right-0 w-[32%] h-[100px] second ">
+                <img src="../img/services1.png" alt="">
+            </div>
+            <div class="absolute top-0 left-0 w-[32%] h-[100px]  z-1">
+                <img src="../img/services1.png" alt="">
+            </div>
+
+            <div class="custom-container">
+                <div class="text-center pt-4 pb-10">
+                    <!-- <h1 class="world-h1 text-[white]">Our Services</h1> -->
+                </div>
+
+                <div
+                    class="flex md:justify-center justify-center md:px-0 px-5 flex-wrap flex-wrap items-start  my-10 relative  z-2 column-gap-10 gap-x-8 gap-y-8">
+                    <div class="md:w-[23%]  w-full   bg-white bg-cover p-5 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Rheumatic Profile (Minor) - Rs.
+                            1500</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CBP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ESR</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CUE</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; UA</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; RF</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ASO</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Calcium</li>
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[23%] w-full bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Rheumatic Profile (Major) - Rs.
+                            3500</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CBP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ESR</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CUE</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; UA</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; RF</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ASO</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Calcium</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ANA</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Anti CCP</li>
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="md:w-[23%] w-full  bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Diabetic Health Check Up - Rs.
+                            2000</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; FBS</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; PLBS</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; HbA1C</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Urea</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Creatinine</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Urine Analysis</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lipid Profile</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Liver Function Test</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Albumin/Creatinin Ratio</li>
+
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Infertility Profile (Male) - Rs.
+                            2000</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; FSH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Testosterone</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; FSH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; LH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Prolactin</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Semen Analysis</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Urine Analysis</li>
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- second row -->
+
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Infertility Profile (Female) -
+                            Rs. 4000</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CBP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; T3,T4,TSH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; FSH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; LH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Prolactin</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Estradiol</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; DHEA</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Urine Culture</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; AMH</li>
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Antenatal Profile - Rs. 3800
+                        </h4>
+                        <ul class="py-4 services-ui md:h-[400px] overflow-y-auto scrollbar">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CBP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CUE</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; BIGR & RH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; TYPE</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; HIV</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; HBS AG
+
+                            </li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; VDRL</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CT, BT</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; RBS</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; TSH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; TSH</li>
+
+                            <li class="py-2 font-[Poppins] ">
+                                Facilities Available:</li>
+
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Biochemistry</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Serology</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Pathology</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Microbiology</li>
+
+
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Immunology</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Histopathology</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Digital X-Ray</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; 2D Echo</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Colour Doppler</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; E.C.G.</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Ultrasonography</li>
+
+
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Regular Health Check Up - Rs.
+                            500</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; RBS</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Creat</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ESR</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Urine Analysis</li>
+
+
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Master Health Check Up - Rs.
+                            2500</h4>
+                        <ul class="py-4 services-ui md:h-[400px] scrollbar overflow-y-scroll">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; FBS</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; HbA1C</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Blood Urea</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Creatinine</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; BUN</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Uric Acid</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lipid Profile</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Liver Function Test</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP</li>
+
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ESR</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Urine Analysis</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; X-Ray Chest</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; E.C.G (Electrocardiogram)</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; T3, T4, TSH</li>
+
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp;USG-Sonogram - Whole Abdomen</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp;Physician Consultation</li>
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">Cardiac Health Check Up - Rs.
+                            3500</h4>
+                        <ul class="py-4 services-ui md:h-[400px]">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Creatinine</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; FBS + Electrolytes</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Lipid Profile</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; E.C.G</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; 2D Echo</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; TROP I</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Cardiologist/Physician Consultation</li>
+
+
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="md:w-[23%] w-full   bg-white bg-cover p-5 bg-cover p-10 rounded-lg services-box ">
+                        <h4 class="font-[Poppins] text-[#358E83] text-xl font-semibold">PCOD Profile - Rs. 4000</h4>
+                        <ul class="py-4 services-ui md:h-[400px] scrollbar overflow-y-scroll">
+                            <li class="py-2 font-[Poppins] "> <i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CRP
+                            </li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; ESR</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; CUE</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp;Insulin Fasting</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp;FSH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; LH</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Prolactin</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Testosterone</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; HbA1C</li>
+                            <li class="py-2 font-[Poppins] "><i class="fa-solid fa-star text-[#358E83]"></i>&nbsp;
+                                &nbsp; Ultra Sound Pelvic Pathology</li>
+
+
+
+
+                        </ul>
+                        <div class="text-center py-4">
+                            <div class="bg-[#358E83] text-white px-4 py-2 rounded-lg" onclick="showScheduleForm()">
+
+                                                    <a href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH">Appointment</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <!-- footer -->
+    <footer class="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-[url(../img/Footerbackground.png)]">
+        <div
+            class="custom-container flex justify-between items-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+            <div class="lg:w-1/3">
+                <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+                    <div class="flex items-center justify-center w-[70%] h-12 ">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+
+                </a>
+            </div>
+            <div class="flex  text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-3">
+
+                <div class="w-1/2">
+                    <h3 class="tracking-wide uppercase  font-semibold font-[Roboto] text-[#358E83]">Quick Links</h3>
+                    <ul class="space-y-1">
+                        <li>
+                            <a rel="noopener noreferrer" href="../index.html"
+                                class="font-[poppins] py-2 inline-block">Home</a>
+                        </li>
+        
+                        <li>
+                            <a rel="noopener noreferrer" href="../index.html#aboutus"
+                                class="font-[poppins] py-2 inline-block">About Us</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="../alldoctors/index.html"
+                                class="font-[poppins] py-2 inline-block">Our Doctors</a>
+                        </li>
+
+                                                        <a rel="noopener noreferrer" href="http://183.82.145.55:8080/clouduat/admin/OnlineAppoitmentsNewTesting.jsp?webformid=wf4381&formid=wf4381&hosploc=NMH" class="font-[poppins] py-2 inline-block">Book Appointment</a>
+
+
+
+                    </ul>
+                </div>
+                <div class="w-1/2">
+                    <h3 class="uppercase  font-semibold font-[Roboto] text-[#358E83]">Social Links</h3>
+                    <ul class="space-y-1">
+                        <li>
+                            <a rel="noopener noreferrer" href="#" class="font-[poppins] py-2 inline-block">Address: Opp.
+                                Post Office, Vijaya Nagar Colony, Hyderabad, Telangana</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="#" class="font-[poppins] py-2 inline-block">
+                                <i class="fa-solid fa-phone">
+
+                                </i>
+                                9000503000</a>
+                        </li>
+                        <li>
+                            <a rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61557882158136"
+                                class="font-[poppins] py-2 inline-block">
+                                <i class="fa-brands fa-facebook  text-2xl "></i>
+                            </a>
+                            <a rel="noopener noreferrer" href="https://www.instagram.com/nirmalahospitals/"
+                                class="font-[poppins] py-2 inline-block">
+                                <i class="fa-brands fa-square-instagram px-4 text-2xl"></i>
+                            </a>
+                            <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UC6q06dLWyeOCM5aTvSYVigQ"
+                                class="font-[poppins] py-2 inline-block">
+                                <i class="fa-brands fa-square-youtube text-2xl"></i>
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="custom-container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+            <div class="py-6 text-sm ">© 2024 All Rights Reserved.</div>
+            <div class="">
+                <img src="../img/google.png" class="w-[70%] text-center mx-auto" alt="">
+            </div>
+        </div>
+
+
+       </footer>
+<div class="floating_btn">
+  <a target="_blank" href="https://wa.me/+919000503000">
+    <div class="contact_icon">
+      <i class="fa fa-whatsapp my-float"></i>
+    </div>
+  </a>
+  <p class="text_icon">Talk to us?</p>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+            },
+
+        });
+    </script>
+
+    <script>
+        $('.row').slick({
+            autoplay: true,
+            arrows: true,
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            autoplaySpeed: 1500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        autoplaySpeed: 1000,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $(document).ready(function () {
+            $('.bar').click(function () {
+                $('.barside').toggleClass('barside1')
+            })
+        });
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        var amount1 = document.getElementById('amount1')
+
+        for (let i = 10000; i < 20000; i++) {
+            print(i)
+        }
+
+
+        function print(i) {
+            setTimeout(() => {
+
+                amount1.innerHTML = `${i}`
+
+
+            }, 1 * i)
+        }
+    </script>
+
+    <script>
+        function showScheduleForm() {
+            let Form = document.getElementsByClassName('Schedule-main2')[0];
+
+
+            Form.classList.toggle('showScheduleForm');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/*
+WP Theme: medileaves - Data Science & Analytics WordPress Theme
+Author: powersquall.com
+Version: 1.0  
+Design and Developed by: Power Squall
+*/
+
+/*=====================================
+[  Table Of Contents ] 
+=======================================
+
+=======================================
+[ End Table Contents ]
+=====================================*/
+
+
+@media (max-width:1200px){ 
+    
+    /* Client Logo ----------*/
+    .client-logo-main .client-logo-inner.grid-column-6,
+    .client-logo-main .client-logo-inner.grid-column-5,
+    .client-logo-main .client-logo-inner.grid-column-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Image Gallery ----------*/
+    .gallery-item-main .gallery-item-inner.grid-column-6,
+    .gallery-item-main .gallery-item-inner.grid-column-5,
+    .gallery-item-main .gallery-item-inner.grid-column-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Blog Grid -----------*/
+    .blog-post-main .blog-member-grid.lap-grid-4 {grid-template-columns: repeat(4, 1fr);}
+    .blog-post-main .blog-member-grid.lap-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .blog-post-main .blog-member-grid.lap-grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Team Grid -----------*/
+    .team-member .team-member-grid.lap-grid-4 {grid-template-columns: repeat(4, 1fr);}
+    .team-member .team-member-grid.lap-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .team-member .team-member-grid.lap-grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Products Grid -----------*/
+    .products-items .products-grid.lap-grid-4 {grid-template-columns: repeat(4, 1fr);}
+    .products-items .products-grid.lap-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .products-items .products-grid.lap-grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Portfolio -----------*/
+    .portfolio-main.lap-grid-4 .portfolio-wrapper .b-isotope-grid .grid-item {width: 25%;}
+    .portfolio-main.lap-grid-3 .portfolio-wrapper .b-isotope-grid .grid-item {width: 33.33%;}
+    .portfolio-main.lap-grid-2 .portfolio-wrapper .b-isotope-grid .grid-item {width: 50%;}
+
+}
+
+@media (max-width:991px){ 
+   
+    /* Infobox ----------*/
+    .feature-box.icon-top.tablet-text-left {
+        text-align: left !important;
+    }
+    .feature-box.icon-right.tablet-icon-left .feature-icon {
+        margin-right: 25px;
+        margin-left: 0;
+        order: 1;
+    }
+    .feature-box.icon-right.tablet-icon-left .feature-info {
+        text-align: left;
+        order: 2;
+    }
+
+    /* Parallax Banner ----------*/
+    .parallax-img.parallax-hide-tablet {
+        display: none !important;
+    }
+
+    /* Client Logo ----------*/
+    .client-logo-main .client-logo-inner.grid-column-6,
+    .client-logo-main .client-logo-inner.grid-column-5,
+    .client-logo-main .client-logo-inner.grid-column-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Image Gallery ----------*/
+    .gallery-item-main .gallery-item-inner.grid-column-6,
+    .gallery-item-main .gallery-item-inner.grid-column-5,
+    .gallery-item-main .gallery-item-inner.grid-column-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Blog Grid ------------*/
+    .blog-post-main .blog-member-grid.tab-grid-4 {grid-template-columns: repeat(4, 1fr);}
+    .blog-post-main .blog-member-grid.tab-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .blog-post-main .blog-member-grid.tab-grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Team Grid ------------*/
+    .team-member .team-member-grid.tab-grid-4 {grid-template-columns: repeat(4, 1fr);}
+    .team-member .team-member-grid.tab-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .team-member .team-member-grid.tab-grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Team Details --------*/
+    .single-team .team-detail-inner {flex-wrap: wrap;}
+    .single-team .team-detail-info {position: relative; top: auto !important; display: flex; width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 50px;}
+    .team-detail-info .user-image {width: 280px; flex: none; margin-right: 30px; align-self: flex-start;}
+    .team-detail-info .member-info {width: 100%;}
+
+    /* Products Grid -----------*/
+    .products-items .products-grid.tab-grid-4 {grid-template-columns: repeat(4, 1fr);}
+    .products-items .products-grid.tab-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .products-items .products-grid.tab-grid-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Portfolio -----------*/
+    .portfolio-main.tab-grid-4 .portfolio-wrapper .b-isotope-grid .grid-item {width: 25%;}
+    .portfolio-main.tab-grid-3 .portfolio-wrapper .b-isotope-grid .grid-item {width: 33.33%;}
+    .portfolio-main.tab-grid-2 .portfolio-wrapper .b-isotope-grid .grid-item {width: 50%;}
+
+    /* Marquee Slider -----------*/
+    .marquee-slider .marquee-item .title {font-size: 28px;}
+
+}
+
+@media (max-width:767px){ 
+    
+    /* Infobox ----------*/
+    .feature-box.icon-top.mobile-text-left {
+        text-align: left !important;
+    }
+    .feature-box.icon-right.mobile-icon-left .feature-icon {
+        margin-right: 25px;
+        margin-left: 0;
+        order: 1;
+    }
+    .feature-box.icon-right.mobile-icon-left .feature-info {
+        text-align: left;
+        order: 2;
+    }
+
+    /* Parallax Banner ----------*/
+    .parallax-img.parallax-hide-mobile {
+        display: none !important;
+    }
+
+    /* Infobox ----------*/
+    .feature-box.style-icon-bg.text-left .feature-icon:after {
+        left: auto;
+        right: -30px;
+    }
+
+    /* Image Hotspot ----------*/
+    .image-hotspot-wrapper .image-hotspot-content .hotspot-content {
+        display: none;
+    }
+
+    /* Client Logo ----------*/
+    .client-logo-main .client-logo-inner.grid-column-6,
+    .client-logo-main .client-logo-inner.grid-column-5,
+    .client-logo-main .client-logo-inner.grid-column-4,
+    .client-logo-main .client-logo-inner.grid-column-3,
+    .client-logo-main .client-logo-inner.grid-column-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Image Gallery ----------*/
+    .gallery-item-main .gallery-item-inner.grid-column-6,
+    .gallery-item-main .gallery-item-inner.grid-column-5,
+    .gallery-item-main .gallery-item-inner.grid-column-4,
+    .gallery-item-main .gallery-item-inner.grid-column-3,
+    .gallery-item-main .gallery-item-inner.grid-column-2 {grid-template-columns: repeat(2, 1fr);}
+
+    /* Blog Grid ------------*/
+    .blog-post-main .blog-member-grid.mob-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .blog-post-main .blog-member-grid.mob-grid-2 {grid-template-columns: repeat(2, 1fr);}
+    .blog-post-main .blog-member-grid.mob-grid-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Team Grid -----------*/
+    .team-member .team-member-grid.mob-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .team-member .team-member-grid.mob-grid-2 {grid-template-columns: repeat(2, 1fr);}
+    .team-member .team-member-grid.mob-grid-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Team Details --------*/
+    .elementor-page.single-team .site-content-contain {padding: 80px 0;}
+    .single-team .team-detail-info {flex-wrap: wrap;}
+    .team-detail-info .user-image {width: 100%; margin: 0; margin-bottom: 30px;}
+    .team-detail-info .user-image img {width: 100%;}
+
+    /* Products Grid -----------*/
+    .products-items .products-grid.mob-grid-3 {grid-template-columns: repeat(3, 1fr);}
+    .products-items .products-grid.mob-grid-2 {grid-template-columns: repeat(2, 1fr);}
+    .products-items .products-grid.mob-grid-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Portfolio -----------*/
+    .portfolio-main.mob-grid-3 .portfolio-wrapper .b-isotope-grid .grid-item {width: 33.33%;}
+    .portfolio-main.mob-grid-2 .portfolio-wrapper .b-isotope-grid .grid-item {width: 50%;}
+    .portfolio-main.mob-grid-1 .portfolio-wrapper .b-isotope-grid .grid-item {width: 100%;}
+
+    /* Testimonial -----------*/
+    .testimonial-style-2 .swiper-container .swiper-button-next,
+    .testimonial-style-2 .swiper-container .swiper-button-prev {display: none !important;}
+
+    /* Marquee Slider -----------*/
+    .slide-bg-on .marquee-slider-inner:before {transform: rotate(2deg);}
+    .marquee-slider-inner {padding: 25px 0; gap: 50px;}
+    .marquee-slider .marquee-item .title {font-size: 22px;}
+
+}
+
+@media (max-width:575px){
+    
+    /* Blog Grid ------------*/
+    .blog-post-main .blog-member-grid.mobpor-grid-2 {grid-template-columns: repeat(2, 1fr);}
+    .blog-post-main .blog-member-grid.mobpor-grid-1 {grid-template-columns: repeat(1, 1fr);} 
+    
+    /* Team Grid ------------*/
+    .team-member .team-member-grid.mobpor-grid-2 {grid-template-columns: repeat(2, 1fr);}
+    .team-member .team-member-grid.mobpor-grid-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Products Grid -----------*/
+    .products-items .products-grid.mobpor-grid-2 {grid-template-columns: repeat(2, 1fr);}
+    .products-items .products-grid.mobpor-grid-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Portfolio -----------*/
+    .portfolio-main.mpor-grid-2 .portfolio-wrapper .b-isotope-grid .grid-item {width: 50%;}
+    .portfolio-main.mpor-grid-1 .portfolio-wrapper .b-isotope-grid .grid-item {width: 100%;}
+
+}
+
+@media (max-width:479px){ 
+    
+    /* Client Logo ----------*/
+    .client-logo-main .client-logo-inner.mob-column-3 {grid-template-columns: repeat(3, 1fr);}
+    .client-logo-main .client-logo-inner.mob-column-2 {grid-template-columns: repeat(2, 1fr);}
+    .client-logo-main .client-logo-inner.mob-column-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Image Gallery ----------*/
+    .gallery-item-main .gallery-item-inner.mob-column-3 {grid-template-columns: repeat(3, 1fr);}
+    .gallery-item-main .gallery-item-inner.mob-column-2 {grid-template-columns: repeat(2, 1fr);}
+    .gallery-item-main .gallery-item-inner.mob-column-1 {grid-template-columns: repeat(1, 1fr);}
+
+    /* Newsletter ----------*/
+    .newsletter-main.newsletter-style-1 .mc4wp-form-fields,
+    .newsletter-main.newsletter-style-2 .mc4wp-form-fields {
+        flex-wrap: wrap;
+    }
+    .newsletter-main.newsletter-style-1 .button-area,
+    .newsletter-main.newsletter-style-2 .button-area {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 10px;
+    }
+
+    /* Pricing Table ----------*/
+    .pricing-table.pricing-3 .pricing-price,
+    .pricing-table.pricing-4 .pricing-price {
+        flex-wrap: wrap;
+    }
+    .pricing-table.pricing-3 .pricing-price > span,
+    .pricing-table.pricing-4 .pricing-price > span {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    /* Sign In/Sign Up Form -----------*/
+    .medileaves-form-element .wpcf7-form-control-checkbox,
+    .medileaves-form-element .wpcf7-form-control-action {display: block;}
+    .medileaves-form-element .wpcf7-form-control-action .wpcf7-form-control-new-account,
+    .medileaves-form-element .wpcf7-form-control-action .forgotten-password {margin-top: 15px;}
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Left Column - Content */
+.main-content {
+    flex: 1;
+    max-width: 800px;
+}
+
+h1 {
+    color: #1a1a3a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0 30px 0;
+}
+
+h2 {
+    color: #1a1a3a;
+    font-size: 1.5em;
+    margin: 30px 0 20px 0;
+}
+
+.bullet-list {
+    list-style-position: inside;
+    margin: 20px 0;
+}
+
+.bullet-list li {
+    margin: 12px 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.benefit {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.benefit h3 {
+    color: #1a1a3a;
+    margin-bottom: 10px;
+}
+
+/* Right Column - Appointment Form */
+.appointment-section {
+    width: 400px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.appointment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1557b0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .appointment-section {
+        width: 100%;
+        position: static;
+        margin-top: 40px;
+    }
+}

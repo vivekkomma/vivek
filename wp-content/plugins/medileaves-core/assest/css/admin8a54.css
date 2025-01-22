@@ -1,0 +1,22 @@
+/*
+WP Theme: medileaves - Data Science & Analytics WordPress Theme
+Author: powersquall.com
+Version: 1.0  
+Design and Developed by: Power Squall
+*/
+
+/*===================================*/
+/* medileaves Element Icon */
+/*===================================*/
+#elementor-panel-content-wrapper .elementor-element-wrapper .elementor-element .medileaves-icon:before {
+    content: normal;
+}
+#elementor-panel-content-wrapper .elementor-element-wrapper .elementor-element .medileaves-icon:after {
+    content: "";
+    width: 30px;
+    height: 33px;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(../images/elements-icon.png);
+    background-repeat: no-repeat;  
+}
